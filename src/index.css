@@ -248,6 +248,9 @@
     padding-left: 2em;
     padding-right: 2em;
   }
+  .links{
+    margin-bottom: 1.5%;
+  }
   .links a{
     letter-spacing: 0.05em;
     padding-left: 2em;
