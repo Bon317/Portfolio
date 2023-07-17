@@ -3,7 +3,7 @@
 .contact{
     display: none;
     align-items: center;
-    justify-content: center;
+   
     flex-direction: column;
     position: fixed;
     font-family: 'Poppins', sans-serif;
@@ -17,6 +17,7 @@
     width: 50%;
     top: 25%;
     left: 25%;
+    overflow: auto;
 }
 .contact input{
     width: 98%;
@@ -28,6 +29,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .contact textarea{
+    min-height: 50px;
     height: 50%;
     width: 98%;
     margin: 1%;
