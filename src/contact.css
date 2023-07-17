@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.contact{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    background-size: contain;
+    z-index: 5;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+}
+.contact input{
+    width: 98%;
+    font-size: 1.5rem;
+    margin: 1%;
+    border-radius: 15px;
+    text-indent: 1%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+.contact textarea{
+    height: 50%;
+    width: 98%;
+    margin: 1%;
+    padding:1%;
+    font-size: 1rem;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.red-x{
+    color: red;
+    font-size: 1rem;
+}
+.red-x:hover{
+    cursor: pointer;
+}
+.closeContact{
+    display: flex;
+    justify-content: right;
+    width: 95%;
+    margin-top:1%;
+}
+#button{
+    border-radius: 15px;
+    width:50%;
+    font-size: 2rem;
+    margin:1%;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    background: #162052;
+    color: #fff;
+}
+#button:hover{
+    cursor: pointer;
+}
+
+.isVisible{
+    display:flex;
+}
+@media all and (max-width: 800px) {
+    .contact{
+        height: auto;
+        width: 75%;
+        top: 20%;
+        left: 12.5%;
+    }
+}
