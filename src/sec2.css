@@ -89,7 +89,7 @@
     width: 13.5vw; 
     transform: translateX(-50%);
   }
-  .section02 .galleryItem6, .section02 .galleryItem7{
+  .section02 .galleryItem6, .section02 .galleryItem7, .section02 .galleryItem8{
     display: none;
   }
   /* change font sizes */
