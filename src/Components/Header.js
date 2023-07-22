@@ -8,6 +8,9 @@ const Header = (props) => {
   const handleButtonClick = () => {
     setIsContactVisible(true);
   };
+  const handleLinkClick = () => {
+    props.setLinkClicked(true); 
+  };
 
   const handleCloseContact = () => {
     setIsContactVisible(false);
@@ -17,9 +20,9 @@ const Header = (props) => {
     <div className={`${isHeaderHidden ? 'header hidden' : 'header'}`}>
       <h1>BonDevs</h1>
       <div className="links">
-        <a href="#sec1">Home</a>
-        <a href="#sec2">Projects</a>
-        <a href="#sec3">About</a>
+        <a href="#sec1" onClick={handleLinkClick}>Home</a>
+        <a href="#sec2" onClick={handleLinkClick}>Projects</a>
+        <a href="#sec3" onClick={handleLinkClick}>About</a>
         <span onClick={handleButtonClick}>Contact</span>
       </div>
       {isContactVisible && <Contact isVisible={isContactVisible} onClose={handleCloseContact} />}

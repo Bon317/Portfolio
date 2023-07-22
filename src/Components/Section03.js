@@ -5,7 +5,7 @@ const Section03 = () => {
   return (
     <div className="section03" id="sec3">
         <h1>About</h1>
-        <p>My name is Brandon Griggs! I graduated from Grand Valley State University with a bachelors degree in computer science. 
+        <p>My name is Brandon Griggs! I graduated from Grand Valley State University with a Bachelors degree in computer science. 
             I have a lot of general knowledge and skills in the field. I've have experience coding in many languages and on many platforms.
             Including languages such as c, c++, c#, java, python, R, javascript, html, css, SQL, mySQL and platforms such as Unity, and Android Studio.
             However, a lot of that knowledge is shallow and lacks the depth I would like. To Remedy this, I've taken focus at web development specifically with
