@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Contact from './Contact';
 
-const Header = () => {
+const Header = (props) => {
+  const {isHeaderHidden} = props;
   const [isContactVisible, setIsContactVisible] = useState(false);
 
   const handleButtonClick = () => {
@@ -13,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <div className={`${isHeaderHidden ? 'header hidden' : 'header'}`}>
       <h1>BonDevs</h1>
       <div className="links">
         <a href="#sec1">Home</a>
