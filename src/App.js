@@ -34,7 +34,7 @@ function App() {
   };
 
   const handleScroll = debounce(() => {
-    const scrollThreshold = 10;
+    const scrollThreshold = 100;
     const currentScrollY = window.scrollY;
 
     // If the user scrolls down more than the threshold, hide the header
