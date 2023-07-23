@@ -24,27 +24,27 @@ function App() {
     };
   }, [isLinkClicked, prevScrollY]);
 
-  const debounce = (callback, delay) => {
-    let timerId;
+  const throttle = (callback, delay) => {
+    let lastCall = 0;
     return (...args) => {
-      clearTimeout(timerId);
-      timerId = setTimeout(() => {
-        callback(...args);
-      }, delay);
+      const now = new Date().getTime();
+      if (now - lastCall < delay) return;
+      lastCall = now;
+      callback(...args);
     };
   };
-
-  const handleScroll = debounce(() => {
-    const scrollThreshold = 100;
+  
+  const handleScroll = throttle(() => {
+    const scrollThreshold = 0;
     const currentScrollY = window.scrollY;
-
+  
     // If a link has been clicked, do not hide the header
     if (isLinkClicked) {
       setLinkClicked(false);
       setPrevScrollY(currentScrollY);
       return;
     }
-
+  
     // If the user scrolls down more than the threshold, hide the header
     if (currentScrollY > prevScrollY + scrollThreshold) {
       setHeaderHidden(true);
@@ -53,11 +53,10 @@ function App() {
     else if (currentScrollY < prevScrollY - scrollThreshold) {
       setHeaderHidden(false);
     }
-
+  
     // Update the prevScrollY state after the scroll event has been processed
     setPrevScrollY(currentScrollY);
   }, 100);
-
   return (
     <div className="Container">
       <Header
