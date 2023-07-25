@@ -1,6 +1,6 @@
 .section03{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: linear-gradient(360deg, #000, #16134f);
     display: flex;
