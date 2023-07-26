@@ -152,7 +152,6 @@
   }
   .projectInfo{
     display: flex;
-    padding: 5%;
     position: relative;
     text-align: center;
     color:#000000;
@@ -161,6 +160,10 @@
     width: auto;
     overflow: hidden;
     font-weight: 500;
+    padding: 1%;
+    overflow: auto;
+    transition: all .0s ease-in-out;
+    margin-bottom: 2rem;
   }
   .galleryItem{
     transition: all .3s ease-in-out;
@@ -185,12 +188,6 @@
   }
   .galleryItem3 h2{
     padding-top:1%;
-  }
-  .projectInfo{
-    padding: 1%;
-    overflow: auto;
-    transition: all .0s ease-in-out;
-    margin-bottom: 2rem;
   }
   .galleryItem3:hover .projectPicture img{
     border-radius: 30px;
@@ -220,6 +217,11 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: .1em;
     font-weight: 700;
+  }
+  .projectCard p{
+    height: auto;
+    margin-bottom: 2%;
+    overflow: auto;
   }
 
 

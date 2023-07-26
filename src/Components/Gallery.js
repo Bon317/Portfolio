@@ -81,7 +81,7 @@ const Gallery = () => {
             description={item.description}
             photo={item.photo}
             className={item.className}
-            style={{ transform: `translateX(${(index - activeIndex) * 100}%)` }}
+            style={{ transform: `translateX(${(index - activeIndex) * 100}%)`}}
           />
         ))}
       </div>
