@@ -46,12 +46,12 @@
     perspective: 1000px;
   }
   .section02 .galleryItem1{
-    opacity: .4;
+    opacity: .25;
     right:93%;
     transform: rotateY(-90deg);
   }
   .galleryItem2{
-    opacity: .6;
+    opacity: .8;
     z-index: 1;
     right:68%;
     transform: rotateY(-90deg);
@@ -62,12 +62,12 @@
     right:34%;
   }
   .galleryItem4{
-    opacity: .6;
+    opacity: .8;
     z-index: 1;
     right:0%;
   }
   .galleryItem5{
-    opacity: .4;
+    opacity: .25;
     right:-25%;   
   }
   .section02 .galleryItem6, .section02 .galleryItem7, .section02 .galleryItem8{
