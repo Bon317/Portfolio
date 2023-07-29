@@ -23,7 +23,7 @@ const Gallery = () => {
 
   const [carouselArray, setCarouselArray] = useState(galleryItems);
   const [lastClickTime, setLastClickTime] = useState(0);
-  const [activeIndex, setActiveIndex] = useState(0);
+
   useEffect(() => {
     setCarouselArray((prevArray) => {
       const updatedArray = prevArray.map((item, index) => {
@@ -42,17 +42,6 @@ const Gallery = () => {
     }
     setLastClickTime(currentTime);
     
-    setActiveIndex((prevIndex) => {
-      const lastIndex = carouselArray.length - 1;
-      let newIndex;
-      if (direction === 'left') {
-        newIndex = prevIndex === 0 ? lastIndex : prevIndex - 1;
-      } else {
-        newIndex = prevIndex === lastIndex ? 0 : prevIndex + 1;
-      }
-      return newIndex;
-    });
-
     setCarouselArray((prevArray) => {
       const updatedArray = direction === 'left'
         ? [...prevArray.slice(1), prevArray[0]]
@@ -81,7 +70,6 @@ const Gallery = () => {
             description={item.description}
             photo={item.photo}
             className={item.className}
-            style={{ transform: `translateX(${(index - activeIndex) * 100}%)`}}
           />
         ))}
       </div>
