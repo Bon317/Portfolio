@@ -26,6 +26,7 @@
     border-radius: 15px;
     overflow: hidden;
     background-size: contain;
+    min-height: 600px;
   }
   .section02 .projectCard .projectPicture{
     transition: all 0.3s ease-in-out;
@@ -42,6 +43,7 @@
     justify-content: center;
     width: 80vw;
     height: 90vh;
+    min-height: 600px;
     overflow: hidden;
     perspective: 1000px;
   }
@@ -68,9 +70,13 @@
   }
   .galleryItem5{
     opacity: .25;
+    z-index: 0;
     right:-25%;   
   }
   .section02 .galleryItem6, .section02 .galleryItem7, .section02 .galleryItem8{
+    opacity: 0;
+    z-index: -5;
+    transform: translateZ(900px);
     display: none;
   }
   /* change font sizes */
@@ -190,7 +196,7 @@
     position: absolute;
     color: #000;
     bottom: .12rem;
-    text-decoration: none;
+    text-decoration: underline;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .1em;
     font-weight: 700;
