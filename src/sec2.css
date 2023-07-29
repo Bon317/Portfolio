@@ -206,8 +206,6 @@
     margin-bottom: 2%;
     overflow: auto;
   }
-
-
   @media all and (max-width: 500px) {
     .section02 h1{
       font-size: 4em;
@@ -215,10 +213,16 @@
   }
   @media all and (max-width: 1100px) {
     .section02 .galleryItem1{
-      display:none;
+      opacity: 0;
+      z-index: -5;
+      transform: translateZ(900px);
+      display: none;
     }
     .section02 .galleryItem5{
-      display:none;
+      opacity: 0;
+      z-index: -5;
+      transform: translateZ(900px);
+      display: none;
     }
     .section02 .galleryItem{
       height: 70vh;
@@ -226,15 +230,17 @@
     }
     .section02 .galleryItem2{
       right:50%;
-     
+      opacity: .6;
+      z-index: 1;
     }
     .section02 .galleryItem4{
       right:-15%;
-      
+      opacity: .6;
+      z-index: 1;
     }
     .section02 .galleryItem3{
       right:18%;
-      
+      z-index:3;
     }
     .galleryItem3:hover .projectPicture img{
       border-radius: 15px;
@@ -247,8 +253,6 @@
     .projectInfo{
       padding:5%;
     }
-
-    
   }
   @media all and (max-width: 600px) {
 
